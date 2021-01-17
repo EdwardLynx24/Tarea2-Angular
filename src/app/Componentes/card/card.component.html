@@ -1,0 +1,30 @@
+<div class="container">
+    <input class="form-control btn btn-warning" type="button" (click)="mostrar()" [value]="dataVideojuegos.name">
+    <div *ngIf="ver">
+        <div class="row nop">
+            <h4 class="col-sm-2">Categoria:</h4>
+            <input class="col-sm-2" type="text" [ngModel]="dataVideojuegos.category" [ngClass]='{nop2:cambio}'>
+        </div>
+        <!--<img src=[ngmodel]="dataVideojuegos.resource">-->
+        <br>
+        <div class="row nop">
+            <h4 class="col-sm-2">Clasificación:</h4>
+            <input class="col-sm-2" type="text" value="Hola" [ngModel]="dataVideojuegos.nvESRB" [ngClass]='{nop2:cambio}'>
+        </div>
+        <br>
+        <div class="row nop">
+            <h4 class="col-sm-2">Año de lanzamiento:</h4>
+            <input class="col-sm-2" type="text" [ngModel]="dataVideojuegos.releaseYear"[ngClass]='{nop2:cambio}'>
+        </div>
+        <br>
+        <div class="row nop">
+            <h4 class="col-sm-2">Plataformas:</h4>
+            <input class="col-sm-2" type="text" [ngModel]="dataVideojuegos.platform"[ngClass]='{nop2:cambio}'>
+        </div>
+        <br>
+        <!--<input class="" type="image" [ngModel]="dataVideojuegos.resource"[ngClass]='{nop:cambio}'>-->
+        <input class="form-control" type="button" (click)="ocultar()" value="Deshabilitar">
+        <br>
+    </div>
+</div>
+

@@ -1,0 +1,7 @@
+<div class="conatiner">
+    <input class="btn btn-success" type="button" (click)="deploy()" value="Mostrar/Ocultar Lista">
+    <div *ngIf='ver'>
+        <br>
+        <app-card *ngFor='let videojuego of videojuegos' [dataVideojuegos]="videojuego"></app-card>
+    </div>
+</div>
